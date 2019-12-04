@@ -1,0 +1,56 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  padding: auto 10%;
+}
+
+header{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  text-align: center;
+  color: #333333;
+  padding-top: 30px;
+}
+
+nav{
+  background-color: turquoise;
+}
+
+ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+li{
+  display: inline-block;
+  margin: 10px 10px;
+  text-transform: uppercase;
+}
+
+section{
+  padding: 10%
+}
+
+a{
+  color: #ff0099;
+  text-decoration: none;
+  padding: 40px;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+article{
+  line-height: 150%;
+  margin: 75px 125px;
+}
+
+#imgsvg{
+  padding: 30px auto;
+}
+
+.c{
+  margin: 75px 25px auto 25px
+}
+
