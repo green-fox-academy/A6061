@@ -8,3 +8,7 @@ while (a < 100) {
   console.log("I won't cheat on the exam!");
   a++;
 }
+
+// for (let i: number = 0; i < 100; i++) {
+//     console.log(i);
+// }
