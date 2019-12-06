@@ -13,7 +13,9 @@ let lineCount: number = 4;
 
 let asteriks: string = ''
 
+// (value; value <= 4; +1)
 for (let i = 1; i <= lineCount; i++) {
+    //writes *+1* each time it runs(4 total)
     asteriks = asteriks + '*'
     console.log(asteriks);
 }
