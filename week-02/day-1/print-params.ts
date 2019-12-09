@@ -3,15 +3,19 @@
 //    which logs to the console the input parameters
 //    (can have multiple number of arguments)
 
-// function func1(a1: string, a2: string, a3: number = 5):void {
-// 		console.log('Hi ' + a1 + ' class! Our mentor is ' + a2 + 'And we are ' + a3);
-// 	}
+// function asd(...args){
+//     console.log(args);
+//   }
 
-// func1('');
+//   asd('A',1,'B');
+//   asd('C');
 
-function asd(...args){
-    console.log(args);
-  }
-  
-  asd('A',1,'B');
-  asd('C');
+function func1(a, b, c) {
+  console.log(arguments[0]);
+
+  console.log(arguments[1]);
+
+  console.log(arguments[2]);
+}
+
+func1(1, 2, 3);
