@@ -20,4 +20,4 @@ function drawLine(x: number, y: number): void {
         ctx.stroke();
     }
 }
-drawLine(300, 150);
+drawLine(500, 100);

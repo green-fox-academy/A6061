@@ -21,3 +21,14 @@ function drawLine(aNum: number, bNum: number): void {
     }
 }
 drawLine(25, 25);
+
+// function singleLine(x:number, y:number) {
+//     for(let i: number = 0; i < 300; i+=100) {
+//         ctx.beginPath();
+//         ctx.moveTo(x, y + i);
+//         ctx.lineTo(width/2,(heigth/2));
+//         ctx.stroke();
+//     }
+// }
+
+// singleLine(50, 50);
