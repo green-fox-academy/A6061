@@ -17,3 +17,4 @@ function drawSquare(x: number, y: number): void {
         ctx.strokeRect(width / 2 - x / 2, height / 2 - y / 2, x, y)
 }
 drawSquare(250, 250);
+----------- !!!!!
