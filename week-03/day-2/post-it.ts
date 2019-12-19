@@ -14,7 +14,6 @@ class PostIt {
         this.text = text;
         this.textColor = textColor;
     }
-
 }
 
 let post1 = new PostIt('Black', 'Awesome', 'Yellow');
@@ -22,7 +21,7 @@ let post2 = new PostIt('Magenta', 'Awesome', 'Green');
 let post3 = new PostIt('Orange', 'Awesome', 'Black');
 
 console.log(post1);
-
 console.log(post2);
-
 console.log(post3);
+
+export {};
