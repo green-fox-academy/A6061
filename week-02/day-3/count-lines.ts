@@ -8,17 +8,38 @@
 
 // let fileContent = fs.readFileSync('./my-file.txt', 'utf-8');
 
-function take(fileName: string) {
-    const fs = require('fs');
+// function take(fileName: string) {
+//     const fs = require('fs');
 
+//     try {
+//         let fileContent = fs.readFileSync(fileName, 'utf-8');
+//         console.log(fileContent.split('\n').length);
+//     } catch (error) {
+//         console.log(0);
+//     }
+// }
+// take('./my-file.txt');
+
+
+const fs = require('fs');
+const encoding: string = 'UTF-8';
+
+function counter(fileName: string) {
     try {
-        let fileContent = fs.readFileSync(fileName, 'utf-8');
-        console.log(fileContent.split('\n').length);
+        let fileContent: string = fs.readFileSync(fileName, encoding);
+        let lineCounter: number = 1;
+        for (let i = 0; i < fileContent.length; i++) {
+            if (fileContent[i] === '\n') {
+                lineCounter++;
+            }
+        }
+        console.log(lineCounter);
     } catch (error) {
         console.log(0);
     }
 }
-take('./my-file.txt');
+
+counter('mytest.txt');
 
 // const fs = require('fs');
 
@@ -32,3 +53,5 @@ take('./my-file.txt');
 // }
 // take('./my-file.txt');
 // console.log(fileContent);
+
+export { };

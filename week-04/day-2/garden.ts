@@ -1,5 +1,17 @@
 'use strict';
 
+class Garden {
+  content: Plant[]=[];
+
+  addFlower(flower: Flower): void {
+    this.content.push(flower);
+  }
+
+  addTree(tree: Tree): void {
+    this.content.push(tree);
+  }
+}
+
 class Plant {
   color: string;
   waterLvl: number;
@@ -35,6 +47,7 @@ class Tree extends Plant {
     super(color, waterLvl, waterReq, waterAbsorb);
     this.type = type;
   }
+
   waterNeed(): string {
     if (this.waterLvl < this.waterReq) {
       return 'The' + this.color + this.type + ' needs water.'
@@ -43,8 +56,6 @@ class Tree extends Plant {
     }
   }
 }
-
-
 
 /*
 - - - - - - - - Feladat - - - - - - - - -
@@ -66,4 +77,22 @@ The blue Flower _doesnt_ need water
 The purple Tree _doesnt_ need water
 The orange Tree _doesnt_ need water
 */
+
+let garden = new Garden();
+
+let flower1 = new Flower('yellow');
+garden.addFlower(flower1);
+let flower2 = new Flower('blue');
+garden.addFlower(flower2);
+
+let tree1 = new Tree('purple');
+garden.addTree(tree1);
+let tree2 = new Tree('orange');
+garden.addTree(tree2);
+
+// garden.watering(40);
+// garden.watering(70);
+
+console.log(garden);
+
 export {};

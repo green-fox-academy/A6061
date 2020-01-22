@@ -7,9 +7,6 @@ abstract class Instrument {
     this.name = name;
   }
   abstract sound(): void;
-
-  play(): void {
-  }
 }
 
 abstract class StringedInstrument extends Instrument {
