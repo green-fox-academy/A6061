@@ -16,33 +16,46 @@
 </head>
 
 <body>
+  <div class="maincontainer">
+    <button class="left">
+      <img src="assets/button.svg" width="20" height="auto">
+    </button>
 
-  <div class="gallery">
-    <a target="_blank" href="assets/img_forest.jpg">
-      <img src="assets/img_forest.jpg" alt="Forest" width="600" height="400">
-    </a>
-    <div class="popup" onclick="myFunction()">Click me!
-      <span class="popuptext" id="descriptionPopup">Clicked-short.desc.</span>
+    <div class="mainGallery">
+      <a target="_blank" href="assets/img_forest.jpg">
+        <img src="assets/img_forest.jpg" width="1280" height="720">
+      </a>
     </div>
+
+    <button class="right">
+      <img src="assets/button.svg" width="20" height="auto">
+    </button>
   </div>
 
-  <div class="gallery">
-    <a target="_blank" href="assets/img_lights.jpg">
-      <img src="assets/img_lights.jpg" alt="Northern Lights" width="600" height="400">
-    </a>
-    <!-- <div class="popup" onclick="myFunction()">Click me!
-      <span class="popuptext" id="descriptionPopup">Description2</span> -->
-    </div>
-  </div>
+  <ul>
+    <li class="secondcontainer">
+      <a target="_blank" href="assets/img_forest.jpg">
+        <img src="assets/img_forest.jpg" alt="Forest" width="600" height="400">
+      </a>
+      <div class="popup" onclick="myFunction()">Click (ideally-hover) me!
+        <span class="popuptext" id="descriptionPopup">Clicked-short.desc.</span>
+      </div>
+    </li>
 
-  <div class="gallery">
-    <a target="_blank" href="assets/img_mountains.jpg">
-      <img src="assets/img_mountains.jpg" alt="Mountains" width="600" height="400">
-    </a>
-    <div class="popup" onclick="myFunction()">Click me!
-      <span class="popuptext" id="descriptionPopup">Description3</span>
+    <li class="gallery">
+      <a target="_blank" href="assets/img_lights.jpg">
+        <img src="assets/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+      </a>
+    </li>
     </div>
-  </div>
+
+    <li class="gallery">
+      <a target="_blank" href="assets/img_mountains.jpg">
+        <img src="assets/img_mountains.jpg" alt="Mountains" width="600" height="400">
+      </a>
+    </li>
+  </ul>
+
   <script src="index.js"></script>
 </body>
 
