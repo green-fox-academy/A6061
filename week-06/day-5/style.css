@@ -1,13 +1,3 @@
-/* .container {
-  display: flex;
-  height: 200px;
-  width: 100%;
-  background-color: orange;
-  justify-content: left;
-  align-items: center;
-  padding: 0;
-} */
-
 .maincontainer {
   list-style: none;
   display: flex;
@@ -27,7 +17,7 @@
 .mainGallery {
   width: 1280px;
   min-height: 720px;
-  background-color: grey;
+  background-color: honeydew;
 }
 .right {
   min-height: 720px;
@@ -39,54 +29,44 @@
   transform: rotate(180deg);
 }
 
-
-/* .secondcontainer {
-  display: flex;
-  height: 200px;
-  width: 100%;
-  background-color: transparent;
-  justify-content: left;
-  align-items: center;
-  padding: 0;
-} */
-.gallery {
-  list-style: none;
-  margin-right: 5px;
-  width: 50px;
-  height: 50px;
-  background-color: honeydew;
-}
-
-
 body {
-  background-image: url("assets/fadeGreen.jpg");
+  background-image: url("assets/greengradient.png");
   background-color: honeydew;
   background-size: 100%;
  }
 
-li.gallery {
-  margin: 1%;
-  padding: 0.60%;
-  border: 2px solid grey;
-  border-radius: 5px;
-  float: left;
-  width: 10%;
-  height: 10%;
+ .secondarycontainer {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* div.gallery:hover {
+.gallery {
+  display: inline-table;
+  list-style: none;
+  margin: 30px 30px;
+  padding: 30px;
+}
+
+.gallery img {
+  height: 72px;
+  width: 128px;
+  border-style: solid;
+  border-color: honeydew;
+  border-radius: 8px;
+}
+
+/* li.gallery:hover {
   border: 2px solid yellow;
 } */
 
-li.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-li.desc {
+/* li.desc {
   padding: 0px;
   text-align: center;
-}
+} */
+
+/* trick-magic */
 
 /* Popup container */
 .popup {
@@ -94,7 +74,6 @@ li.desc {
   display: inline-block;
   cursor: pointer;
 }
-/* trick */
 /* The actual popup (appears on top) */
 .popup .popuptext {
   border-top: 100px;
@@ -111,7 +90,6 @@ li.desc {
   left: 50%;
   margin-left: -80px;
 }
-
 /* Popup arrow */
 .popup .popuptext::after {
   content: "";
@@ -123,20 +101,17 @@ li.desc {
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
-
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s
 }
-
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
 }
-
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}

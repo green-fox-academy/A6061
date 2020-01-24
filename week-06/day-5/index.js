@@ -1,7 +1,6 @@
 'use strict';
 
-// When the user clicks on <div>, open the popup
-function myFunction() {
+function myFunction() { // click-hover-popup func
   var popup = document.getElementById("descriptionPopup");
   popup.classList.toggle("show");
 }
