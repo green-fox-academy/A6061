@@ -9,23 +9,38 @@
 const image = document.querySelector('.img-inspector');
 const nav = document.querySelector('nav');
 
-const buttons = (e) => {
-  // console.log(e.target.attributes['data-direction'].value);
-  console.log(e)
+let pic = {
+  'size': 200,
+  'down': 0,
+  'right': 0,
 };
 
-nav.addEventListener('click', buttons);
-
-
-// if (event.target.getAttribute('data-action') === 'move' {}
-// event.target.getAttribute('data-direction'))
-
-
-
-
-
-
-
+nav.addEventListener('click', (event) => {
+  if (event.target.innerText === 'Up') {
+    pic.down -= 10;
+    image.setAttribute('style', `background-size: ${pic.size}%; background-position: ${pic.right}px ${pic.down}px`);
+  };
+  if (event.target.innerText === 'Down') {
+    pic.down += 10;
+    image.setAttribute('style', `background-size: ${pic.size}%; background-position: ${pic.right}px ${pic.down}px`);
+  };
+  if (event.target.innerText === 'Left') {
+    pic.right -= 10;
+    image.setAttribute('style', `background-size: ${pic.size}%; background-position: ${pic.right}px ${pic.down}px`);
+  };
+  if (event.target.innerText === 'Right') {
+    pic.right += 10;
+    image.setAttribute('style', `background-size: ${pic.size}%; background-position: ${pic.right}px ${pic.down}px`);
+  };
+  if (event.target.innerText === 'Zoom in') {
+    pic.size += 20;
+    image.setAttribute('style', `background-size: ${pic.size}%; background-position: ${pic.right}px ${pic.down}px`);
+  };
+  if (event.target.innerText === 'Zoom out') {
+    pic.size -= 20;
+    image.setAttribute('style', `background-size: ${pic.size}%; background-position: ${pic.right}px ${pic.down}px`);
+  };
+});
 
 // Method 2; (Not mine - just hoarding ༼ つ ◕_◕ ༽つ)
 
